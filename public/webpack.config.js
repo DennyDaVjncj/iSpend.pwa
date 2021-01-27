@@ -3,8 +3,8 @@ const passage=require('path');
 
 const compass={
     entry:{
-        app:'../waitress.js',
-        homepage:'./index.html',
+        app:'index.js',
+        homepage:'index.html',
         interfaceLogic:'./index.js'
     },
     output:{
