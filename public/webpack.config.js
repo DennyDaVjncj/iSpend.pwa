@@ -40,7 +40,7 @@ const compass={
                 {
                     src:passage.resolve('/icons/icon-192x192.png'),
                     sizes:[96,128,192,256,384,512],
-                    destination:passage.join('')//resolve ASAP
+                    destination:passage.join('/icons')//tentative rout
                 }
             ]
         })
