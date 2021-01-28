@@ -1,37 +1,43 @@
 {
-  "name": "budget-app",
+  "name": "iSpend.pwa",
   "version": "1.0.0",
-  "description": "",
+  "description": "Add functionality to our existing Budget Tracker application to allow for offline access and functionality.",
   "main": "waitress.js",
-  "scripts": {
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod":"npm run build && node waitress.js",
-    "start:dev":"concurrently\"npm run waitress\"\"cd client && npm run start\"",
-    "lite-server": "lite-server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/coding-boot-camp/unit18hw.git"
-  },
-  "author": "Denny da Vjncj",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/coding-boot-camp/unit18hw/issues"
-  },
-  "homepage": "https://github.com/DennyDaVjncj/iSpend.pwa",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "lite-server": "^2.5.3",
-    "mongoose": "^5.5.15",
-    "morgan": "^1.9.1"
+    "if-env": "^1.0.4",
+    "lite-server": "^2.6.1",
+    "mongoose": "^5.11.13",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
-    "webpack": "4.44.2",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.18.0",
+    "webpack-bundle-analyzer": "^4.4.0",
     "webpack-cli": "^4.4.0",
     "webpack-pwa-manifest": "^4.3.0"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod||npm run start:dev",
+    "start:prod": "npm run build && node waitress.js",
+    "start:dev": "concurrently \"npm run waitress\" \"cd client && npm run start\"",
+    "server": "nodemon waitress.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd client && npm install",
+    "client": "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DennyDaVjncj/iSpend.pwa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DennyDaVjncj/iSpend.pwa/issues"
+  },
+  "homepage": "https://github.com/DennyDaVjncj/iSpend.pwa#readme"
 }
