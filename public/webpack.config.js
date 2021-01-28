@@ -8,7 +8,7 @@ const compass={
         interfaceLogic:'./index.js'
     },
     output:{
-        path:__dirname+'/public/dist',
+        path:__dirname+'/client/dist',
         filename:'[name].bundle.js',
     },
     mode:'development',
