@@ -3,9 +3,9 @@ const passage=require('path');
 
 const compass={
     entry:{
-        app:'index.js',
-        homepage:'index.html',
-        interfaceLogic:'./index.js'
+        app:'index.js'
+        // homepage:'index.html',
+        // interfaceLogic:'./index.js'
     },
     output:{
         path:__dirname+'/client/dist',
@@ -40,10 +40,13 @@ const compass={
                 {
                     src:passage.resolve('/icons/icon-192x192.png'),
                     sizes:[96,128,192,256,384,512],
-                    destination:passage.join('/icons')//tentative rout
+                    destination:passage.join('/icons/icon-192x192')//reference mini prjct
                 }
             ]
         })
     ]
 }
 module.exports=compass;
+//rout to icon for manifest
+//be sure bundle is gened wihtin Dist folder
+//register service worker via html/update src to ref bundle.js
