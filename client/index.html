@@ -42,8 +42,14 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script>
-    //'register' indenturedServant HERE
+  <script type="text/javascript">
+    (()=>{
+      if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('./service-worker.js',{scope:'/'})
+          .then(()=>console.log('Service Worker registered successfully!'))
+          .catch(vice=>console.log('Service worker failed drug test',vice));
+      }
+    })();
   </script>
   <script src="index.js"></script>
 </body>
