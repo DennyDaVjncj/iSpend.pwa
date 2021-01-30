@@ -22,4 +22,8 @@ const saveOffline=record=>{
 };
 const checkDatabase=()=>{
     const transaction=db.transaction(['awaitingProccessing']);
-}
+}//w17 mini prjct reference!!
+//finish this logic
+    //test offline
+    //data should be synced once online
+//remove dist from git ignore
