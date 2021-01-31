@@ -3,12 +3,10 @@ const passage=require('path');
 
 const compass={
     entry:{
-        app:'index.js'
-        // homepage:'index.html',
-        // interfaceLogic:'./index.js'
+        app:'./index.js'        
     },
     output:{
-        path:__dirname+'/client/dist',
+        path:__dirname+'/dist',
         filename:'[name].bundle.js',
     },
     mode:'development',
@@ -38,9 +36,9 @@ const compass={
             start_url:'/',
             icons:[
                 {
-                    src:passage.resolve('/icons/icon-192x192.png'),
+                    src:passage.resolve('icons/icon-192x192.png'),
                     sizes:[96,128,192,256,384,512],
-                    destination:passage.join('/icons/icon-192x192.png')//reference mini prjct
+                    destination:passage.join('assets','icons')
                 }
             ]
         })
