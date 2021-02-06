@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node waitress.js",
     "server": "nodemon waitress.js --ignore client",
-    "build": "cd client && npm run build",
-    "install": "cd client && npm install"    
+    "install": "cd client"    
   },
   "repository": {
     "type": "git",
