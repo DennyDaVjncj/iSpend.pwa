@@ -4,7 +4,7 @@
   "description": "progressive web app for tracking financial transactions",
   "main": "waitress.js",
   "scripts": {
-    "start": "npm run build && node waitress.js",
+    "start": "node waitress.js",
     "server": "nodemon waitress.js --ignore client",
     "build": "cd client && npm run build",
     "install": "cd client && npm install"    
