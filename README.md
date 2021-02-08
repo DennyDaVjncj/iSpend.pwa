@@ -1,11 +1,14 @@
 # Unit 18 PWA Homework: 💳 iSpend.pwa
 
-<!-- The existing budget tracker had some da Vjncj code added to it & is now a whole PWA! -->
-An existing budget tracking web app, had some `da Vjncj code` added to it & morphed in to a whole PWA!
+An existing budget tracking web app was tranformed in to a progressive web app!
+
+![image](https://user-images.githubusercontent.com/62162419/107164333-9ca74080-697c-11eb-92fd-2d295823f36f.png)
 
 The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
 
 Offline Functionality:
+
+
 
   * Enter deposits offline
 
