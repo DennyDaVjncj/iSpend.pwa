@@ -8,8 +8,6 @@ The user will be able to add expenses and deposits to their budget with or witho
 
 Offline Functionality:
 
-
-
   * Enter deposits offline
 
   * Enter expenses offline
