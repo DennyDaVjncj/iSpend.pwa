@@ -1,4 +1,4 @@
-# 💳 iSpend.pwa - https://agile-headland-12732.herokuapp.com/
+# 💳 iSpend.pwa
 
 An existing budget tracking web app was tranformed in to a progressive web app!
 
