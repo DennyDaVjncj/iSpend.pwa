@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node waitress.js",
     "server": "nodemon waitress.js --ignore client",
-    "install": "cd client"    
+    "install": "cd client"
   },
   "repository": {
     "type": "git",
@@ -20,13 +20,13 @@
   "homepage": "https://github.com/DennyDaVjncj/iSpend.pwa",
   "dependencies": {
     "compression": "^1.7.4",
-    "express": "^4.17.1",
+    "express": "^4.19.2",
     "mongoose": "^5.5.15",
     "morgan": "^1.9.1",
     "nodemon": "^2.0.7"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
-    "nodemon": "2.0.7"    
+    "nodemon": "2.0.7"
   }
 }
